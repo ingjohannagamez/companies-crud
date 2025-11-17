@@ -1,1 +1,1 @@
-package com.elena.companies_crud.application.service;
+package com.elena.companies_crud.infrastructure.repository;
