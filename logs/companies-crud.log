@@ -1,0 +1,344 @@
+2025-11-16T19:04:10.030-05:00  INFO 23564 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Starting CompaniesCrudApplication using Java 25.0.1 with PID 23564 (C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud\target\classes started by pipo0 in C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud)
+2025-11-16T19:04:10.033-05:00  INFO 23564 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T19:04:10.091-05:00  INFO 23564 --- [companies-crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-16T19:04:10.091-05:00  INFO 23564 --- [companies-crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-16T19:04:10.974-05:00  INFO 23564 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16T19:04:10.997-05:00  INFO 23564 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2025-11-16T19:04:11.653-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-11-16T19:04:11.666-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-16T19:04:11.667-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-11-16T19:04:11.725-05:00  INFO 23564 --- [companies-crud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1633 ms
+2025-11-16T19:04:12.001-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16T19:04:12.059-05:00  INFO 23564 --- [companies-crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.7.Final
+2025-11-16T19:04:12.615-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16T19:04:12.645-05:00  INFO 23564 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-16T19:04:12.759-05:00  INFO 23564 --- [companies-crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30695928
+2025-11-16T19:04:12.761-05:00  INFO 23564 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-16T19:04:12.820-05:00  INFO 23564 --- [companies-crud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/companies]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.1
+	Default catalog/schema: companies/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-16T19:04:13.268-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16T19:04:13.281-05:00  INFO 23564 --- [companies-crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:04:13.888-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-16T19:04:13.986-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-11-16T19:04:13.993-05:00  INFO 23564 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Started CompaniesCrudApplication in 4.491 seconds (process running for 5.578)
+2025-11-16T19:04:14.575-05:00  INFO 23564 --- [companies-crud] [RMI TCP Connection(3)-172.27.112.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-16T19:04:14.576-05:00  INFO 23564 --- [companies-crud] [RMI TCP Connection(3)-172.27.112.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-16T19:04:14.578-05:00  INFO 23564 --- [companies-crud] [RMI TCP Connection(3)-172.27.112.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-11-16T19:04:44.325-05:00  INFO 23564 --- [companies-crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
+2025-11-16T19:04:44.332-05:00  INFO 23564 --- [companies-crud] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-16T19:04:44.356-05:00  INFO 23564 --- [companies-crud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-11-16T19:04:44.363-05:00  INFO 23564 --- [companies-crud] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:04:44.368-05:00  INFO 23564 --- [companies-crud] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-16T19:04:44.373-05:00  INFO 23564 --- [companies-crud] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-16T19:04:44.603-05:00  INFO 23564 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Starting CompaniesCrudApplication using Java 25.0.1 with PID 23564 (C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud\target\classes started by pipo0 in C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud)
+2025-11-16T19:04:44.604-05:00  INFO 23564 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T19:04:45.084-05:00  INFO 23564 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16T19:04:45.088-05:00  INFO 23564 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-11-16T19:04:45.272-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-11-16T19:04:45.273-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-16T19:04:45.274-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-11-16T19:04:45.340-05:00  INFO 23564 --- [companies-crud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 732 ms
+2025-11-16T19:04:45.469-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16T19:04:45.568-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16T19:04:45.570-05:00  INFO 23564 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-11-16T19:04:45.632-05:00  INFO 23564 --- [companies-crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@71d0d368
+2025-11-16T19:04:45.632-05:00  INFO 23564 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-11-16T19:04:45.647-05:00  INFO 23564 --- [companies-crud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/companies]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.1
+	Default catalog/schema: companies/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-16T19:04:45.675-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16T19:04:45.677-05:00  INFO 23564 --- [companies-crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:04:45.977-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-16T19:04:46.012-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-11-16T19:04:46.018-05:00  INFO 23564 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Started CompaniesCrudApplication in 1.537 seconds (process running for 37.603)
+2025-11-16T19:04:46.021-05:00  INFO 23564 --- [companies-crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-16T19:04:48.364-05:00  INFO 23564 --- [companies-crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-11-16T19:04:48.366-05:00  INFO 23564 --- [companies-crud] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-16T19:04:48.387-05:00  INFO 23564 --- [companies-crud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-11-16T19:04:48.390-05:00  INFO 23564 --- [companies-crud] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:04:48.392-05:00  INFO 23564 --- [companies-crud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-11-16T19:04:48.397-05:00  INFO 23564 --- [companies-crud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-11-16T19:04:48.546-05:00  INFO 23564 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Starting CompaniesCrudApplication using Java 25.0.1 with PID 23564 (C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud\target\classes started by pipo0 in C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud)
+2025-11-16T19:04:48.546-05:00  INFO 23564 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T19:04:48.896-05:00  INFO 23564 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16T19:04:48.900-05:00  INFO 23564 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-11-16T19:04:49.052-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-11-16T19:04:49.053-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-16T19:04:49.053-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-11-16T19:04:49.104-05:00  INFO 23564 --- [companies-crud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 555 ms
+2025-11-16T19:04:49.191-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16T19:04:49.241-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16T19:04:49.244-05:00  INFO 23564 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-11-16T19:04:49.283-05:00  INFO 23564 --- [companies-crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@4b2cb1b8
+2025-11-16T19:04:49.284-05:00  INFO 23564 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-11-16T19:04:49.298-05:00  INFO 23564 --- [companies-crud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/companies]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.1
+	Default catalog/schema: companies/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-16T19:04:49.329-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16T19:04:49.331-05:00  INFO 23564 --- [companies-crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:04:49.623-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-16T19:04:49.658-05:00  INFO 23564 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-11-16T19:04:49.666-05:00  INFO 23564 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Started CompaniesCrudApplication in 1.165 seconds (process running for 41.251)
+2025-11-16T19:04:49.669-05:00  INFO 23564 --- [companies-crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-16T19:06:15.294-05:00  INFO 23564 --- [companies-crud] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-16T19:06:15.311-05:00  INFO 23564 --- [companies-crud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-11-16T19:06:15.313-05:00  INFO 23564 --- [companies-crud] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:06:15.314-05:00  INFO 23564 --- [companies-crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-11-16T19:06:15.319-05:00  INFO 23564 --- [companies-crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-11-16T19:12:25.072-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Starting CompaniesCrudApplication using Java 25.0.1 with PID 14892 (C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud\target\classes started by pipo0 in C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud)
+2025-11-16T19:12:25.076-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T19:12:25.138-05:00  INFO 14892 --- [companies-crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-16T19:12:25.138-05:00  INFO 14892 --- [companies-crud] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-16T19:12:25.992-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16T19:12:26.018-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2025-11-16T19:12:26.500-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-11-16T19:12:26.512-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-16T19:12:26.512-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-11-16T19:12:26.557-05:00  INFO 14892 --- [companies-crud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1418 ms
+2025-11-16T19:12:26.795-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16T19:12:26.850-05:00  INFO 14892 --- [companies-crud] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.7.Final
+2025-11-16T19:12:27.330-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16T19:12:27.357-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-16T19:12:27.466-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@9c1d048
+2025-11-16T19:12:27.467-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-16T19:12:27.524-05:00  INFO 14892 --- [companies-crud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/companies]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.1
+	Default catalog/schema: companies/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-16T19:12:27.855-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16T19:12:27.864-05:00  INFO 14892 --- [companies-crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:12:28.389-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-16T19:12:28.457-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-11-16T19:12:28.464-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Started CompaniesCrudApplication in 3.901 seconds (process running for 5.025)
+2025-11-16T19:12:28.624-05:00  INFO 14892 --- [companies-crud] [RMI TCP Connection(4)-172.27.112.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-16T19:12:28.624-05:00  INFO 14892 --- [companies-crud] [RMI TCP Connection(4)-172.27.112.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-16T19:12:28.626-05:00  INFO 14892 --- [companies-crud] [RMI TCP Connection(4)-172.27.112.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-11-16T19:19:13.562-05:00  INFO 14892 --- [companies-crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-16T19:19:13.569-05:00  INFO 14892 --- [companies-crud] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-16T19:19:13.605-05:00  INFO 14892 --- [companies-crud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-11-16T19:19:13.627-05:00  INFO 14892 --- [companies-crud] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:19:13.631-05:00  INFO 14892 --- [companies-crud] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-16T19:19:13.640-05:00  INFO 14892 --- [companies-crud] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-16T19:19:13.762-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Starting CompaniesCrudApplication using Java 25.0.1 with PID 14892 (C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud\target\classes started by pipo0 in C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud)
+2025-11-16T19:19:13.763-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T19:19:14.035-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16T19:19:14.038-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-11-16T19:19:14.160-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-11-16T19:19:14.160-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-16T19:19:14.160-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-11-16T19:19:14.193-05:00  INFO 14892 --- [companies-crud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 428 ms
+2025-11-16T19:19:14.243-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16T19:19:14.284-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16T19:19:14.285-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-11-16T19:19:14.307-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@76bc5464
+2025-11-16T19:19:14.307-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-11-16T19:19:14.317-05:00  INFO 14892 --- [companies-crud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/companies]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.1
+	Default catalog/schema: companies/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-16T19:19:14.337-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16T19:19:14.339-05:00  INFO 14892 --- [companies-crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:19:14.529-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-16T19:19:14.565-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-11-16T19:19:14.570-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Started CompaniesCrudApplication in 0.841 seconds (process running for 411.131)
+2025-11-16T19:19:14.573-05:00  INFO 14892 --- [companies-crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-16T19:19:34.777-05:00  INFO 14892 --- [companies-crud] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-16T19:19:34.777-05:00  INFO 14892 --- [companies-crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-16T19:19:34.779-05:00  INFO 14892 --- [companies-crud] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-11-16T19:32:07.422-05:00  INFO 14892 --- [companies-crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-11-16T19:32:07.425-05:00  INFO 14892 --- [companies-crud] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-16T19:32:07.446-05:00  INFO 14892 --- [companies-crud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-11-16T19:32:07.449-05:00  INFO 14892 --- [companies-crud] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:32:07.451-05:00  INFO 14892 --- [companies-crud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-11-16T19:32:07.459-05:00  INFO 14892 --- [companies-crud] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-11-16T19:32:07.622-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Starting CompaniesCrudApplication using Java 25.0.1 with PID 14892 (C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud\target\classes started by pipo0 in C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud)
+2025-11-16T19:32:07.624-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T19:32:08.369-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16T19:32:08.376-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-11-16T19:32:08.618-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-11-16T19:32:08.621-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-16T19:32:08.621-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-11-16T19:32:08.676-05:00  INFO 14892 --- [companies-crud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1045 ms
+2025-11-16T19:32:08.820-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16T19:32:08.892-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16T19:32:08.893-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-11-16T19:32:08.928-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@5a77cfcf
+2025-11-16T19:32:08.929-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-11-16T19:32:08.940-05:00  INFO 14892 --- [companies-crud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/companies]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.1
+	Default catalog/schema: companies/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-16T19:32:08.963-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16T19:32:08.964-05:00  INFO 14892 --- [companies-crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:32:09.291-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-16T19:32:09.318-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-11-16T19:32:09.323-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Started CompaniesCrudApplication in 1.778 seconds (process running for 1185.884)
+2025-11-16T19:32:09.325-05:00  INFO 14892 --- [companies-crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-16T19:32:36.802-05:00  INFO 14892 --- [companies-crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-11-16T19:32:36.802-05:00  INFO 14892 --- [companies-crud] [Thread-9] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-16T19:32:36.820-05:00  INFO 14892 --- [companies-crud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-11-16T19:32:36.823-05:00  INFO 14892 --- [companies-crud] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:32:36.823-05:00  INFO 14892 --- [companies-crud] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-11-16T19:32:36.827-05:00  INFO 14892 --- [companies-crud] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-11-16T19:32:36.933-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Starting CompaniesCrudApplication using Java 25.0.1 with PID 14892 (C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud\target\classes started by pipo0 in C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud)
+2025-11-16T19:32:36.934-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T19:32:37.144-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16T19:32:37.146-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-11-16T19:32:37.236-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-11-16T19:32:37.236-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-16T19:32:37.236-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-11-16T19:32:37.267-05:00  INFO 14892 --- [companies-crud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 330 ms
+2025-11-16T19:32:37.318-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16T19:32:37.355-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16T19:32:37.356-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-11-16T19:32:37.385-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@3521bbae
+2025-11-16T19:32:37.385-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-11-16T19:32:37.396-05:00  INFO 14892 --- [companies-crud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/companies]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.1
+	Default catalog/schema: companies/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-16T19:32:37.418-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16T19:32:37.419-05:00  INFO 14892 --- [companies-crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:32:37.681-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-16T19:32:37.714-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-11-16T19:32:37.718-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Started CompaniesCrudApplication in 0.82 seconds (process running for 1214.279)
+2025-11-16T19:32:37.720-05:00  INFO 14892 --- [companies-crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-16T19:32:39.064-05:00  INFO 14892 --- [companies-crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-11-16T19:32:39.065-05:00  INFO 14892 --- [companies-crud] [Thread-13] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-16T19:32:39.082-05:00  INFO 14892 --- [companies-crud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-11-16T19:32:39.084-05:00  INFO 14892 --- [companies-crud] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:32:39.084-05:00  INFO 14892 --- [companies-crud] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-11-16T19:32:39.089-05:00  INFO 14892 --- [companies-crud] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-11-16T19:32:39.172-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Starting CompaniesCrudApplication using Java 25.0.1 with PID 14892 (C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud\target\classes started by pipo0 in C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud)
+2025-11-16T19:32:39.173-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T19:32:39.362-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16T19:32:39.364-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-11-16T19:32:39.444-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-11-16T19:32:39.445-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-16T19:32:39.445-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-11-16T19:32:39.475-05:00  INFO 14892 --- [companies-crud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 301 ms
+2025-11-16T19:32:39.516-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16T19:32:39.547-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16T19:32:39.548-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-11-16T19:32:39.567-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@37552355
+2025-11-16T19:32:39.567-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-11-16T19:32:39.575-05:00  INFO 14892 --- [companies-crud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/companies]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.1
+	Default catalog/schema: companies/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-16T19:32:39.589-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16T19:32:39.589-05:00  INFO 14892 --- [companies-crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:32:39.784-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-16T19:32:39.825-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-11-16T19:32:39.829-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Started CompaniesCrudApplication in 0.681 seconds (process running for 1216.389)
+2025-11-16T19:32:39.830-05:00  INFO 14892 --- [companies-crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-16T19:35:08.698-05:00  INFO 14892 --- [companies-crud] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-11-16T19:35:08.699-05:00  INFO 14892 --- [companies-crud] [Thread-17] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-16T19:35:08.717-05:00  INFO 14892 --- [companies-crud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-11-16T19:35:08.719-05:00  INFO 14892 --- [companies-crud] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:35:08.719-05:00  INFO 14892 --- [companies-crud] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-11-16T19:35:08.723-05:00  INFO 14892 --- [companies-crud] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-11-16T19:35:08.798-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Starting CompaniesCrudApplication using Java 25.0.1 with PID 14892 (C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud\target\classes started by pipo0 in C:\Users\pipo0\OneDrive\Escritorio\ms\companies-crud)
+2025-11-16T19:35:08.799-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T19:35:09.101-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16T19:35:09.104-05:00  INFO 14892 --- [companies-crud] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-11-16T19:35:09.235-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-11-16T19:35:09.235-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-16T19:35:09.236-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-11-16T19:35:09.276-05:00  INFO 14892 --- [companies-crud] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 475 ms
+2025-11-16T19:35:09.365-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16T19:35:09.412-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16T19:35:09.413-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-11-16T19:35:09.438-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@7a8730e4
+2025-11-16T19:35:09.439-05:00  INFO 14892 --- [companies-crud] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-11-16T19:35:09.447-05:00  INFO 14892 --- [companies-crud] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/companies]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.1
+	Default catalog/schema: companies/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-16T19:35:09.468-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16T19:35:09.469-05:00  INFO 14892 --- [companies-crud] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:35:09.722-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-16T19:35:09.742-05:00  INFO 14892 --- [companies-crud] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-11-16T19:35:09.745-05:00  INFO 14892 --- [companies-crud] [restartedMain] c.e.c.CompaniesCrudApplication           : Started CompaniesCrudApplication in 0.972 seconds (process running for 1366.306)
+2025-11-16T19:35:09.747-05:00  INFO 14892 --- [companies-crud] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-16T19:36:45.938-05:00  INFO 14892 --- [companies-crud] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-16T19:36:45.954-05:00  INFO 14892 --- [companies-crud] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-11-16T19:36:45.956-05:00  INFO 14892 --- [companies-crud] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16T19:36:45.957-05:00  INFO 14892 --- [companies-crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-11-16T19:36:45.959-05:00  INFO 14892 --- [companies-crud] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
