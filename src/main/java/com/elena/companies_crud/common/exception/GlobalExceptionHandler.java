@@ -18,6 +18,7 @@ import org.springframework.web.multipart.MultipartException;
 import org.springframework.web.server.ResponseStatusException;
 
 import jakarta.validation.ConstraintViolationException;
+import org.springframework.web.servlet.resource.NoResourceFoundException;
 
 /**
  * Clase global para el manejo centralizado de excepciones en la aplicación.
@@ -195,6 +196,37 @@ public class GlobalExceptionHandler {
         body.put("message", "Error interno del servidor: " + ex.getMessage());
         body.put("path", request.getDescription(false));
         return new ResponseEntity<>(body, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    /**
+     * Maneja los errores cuando se solicita un recurso estático o ruta
+     * que no existe en la aplicación.
+     *
+     * <p>Este manejador se activa, por ejemplo, cuando el cliente intenta acceder
+     * a recursos como <code>favicon.ico</code> o rutas de <code>swagger-ui</code>
+     * que no están disponibles. Registra el incidente y devuelve una respuesta
+     * controlada al cliente.</p>
+     *
+     * @param ex      la excepción {@link org.springframework.web.servlet.resource.NoResourceFoundException}
+     *                lanzada por Spring cuando no encuentra el recurso solicitado.
+     * @param request la solicitud web asociada al error.
+     * @return una respuesta HTTP con estado 404 (Not Found) y detalles del recurso no encontrado.
+     */
+    @ExceptionHandler(NoResourceFoundException.class)
+    public ResponseEntity<Map<String, Object>> handleNoResourceFound(
+            NoResourceFoundException ex,
+            WebRequest request) {
+
+        logger.warn("Recurso estático no encontrado: {}", ex.getResourcePath());
+
+        Map<String, Object> body = new LinkedHashMap<>();
+        body.put("timestamp", LocalDateTime.now());
+        body.put("status", HttpStatus.NOT_FOUND.value());
+        body.put("error", HttpStatus.NOT_FOUND.getReasonPhrase());
+        body.put("message", ex.getMessage());
+        body.put("path", request.getDescription(false).replace("uri=", ""));
+
+        return new ResponseEntity<>(body, HttpStatus.NOT_FOUND);
     }
 
 }

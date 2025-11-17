@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Companies CRUD – Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 380px;
+            margin: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 { margin-top: 0; }
+        .info { margin-top: 10px; }
+        .status-up { color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Companies CRUD</h2>
+    <p class="info"><strong>Versión:</strong> <span th:text="${version}">1.0.0</span></p>
+    <p class="info"><strong>Descripción:</strong> <span th:text="${description}">Service running</span></p>
+    <p class="info"><strong>Estado:</strong> <span class="status-up">UP</span></p>
+    <p class="info"><strong>Fecha:</strong> <span th:text="${timestamp}">2024-01-01</span></p>
+</div>
+
+</body>
+</html>
