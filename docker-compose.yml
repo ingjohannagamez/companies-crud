@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database (configuración original del usuario)
+  db:
+    image: postgres:16.1
+    container_name: db-companies
+    restart: always
+    volumes:
+      - ./sql/create_schema.sql:/docker-entrypoint-initdb.d/create_schema.sql
+      - ./sql/data.sql:/docker-entrypoint-initdb.d/data.sql
+    environment:
+      POSTGRES_DB: 'companies'
+      POSTGRES_USER: 'debuggeandoideas'
+      POSTGRES_PASSWORD: 'udemy'
+    ports:
+      - '5432:5432'
+    networks:
+      - companies-network
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U debuggeandoideas" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Spring Boot Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: companies-crud-app
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/companies
+      SPRING_DATASOURCE_USERNAME: debuggeandoideas
+      SPRING_DATASOURCE_PASSWORD: udemy
+    ports:
+      - "8080:8080"
+    networks:
+      - companies-network
+    healthcheck:
+      test: [ "CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080/actuator/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+
+networks:
+  companies-network:
+    driver: bridge

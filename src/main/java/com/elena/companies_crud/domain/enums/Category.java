@@ -7,5 +7,11 @@ public enum Category {
     CLOUD_COMPUTING,
     DEVICES,
     EDUCATION,
+    CORPORATE,
+    BLOG,
+    DOCUMENTATION,
+    PRODUCT,
+    SUPPORT,
+    RESEARCH,
     NONE
 }
